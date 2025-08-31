@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alex Doe | Software Engineer</title>
+    <meta name="description" content="Portfolio website of Alex Doe, a software engineer specializing in building web applications and cloud-native services." />
+    <meta name="author" content="Alex Doe" />
+
+    <!-- Open Graph / Twitter -->
+    <meta property="og:title" content="Alex Doe | Software Engineer" />
+    <meta property="og:description" content="Developer portfolio: projects, skills, and experience." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/favicon.svg" />
+    <meta property="og:url" content="." />
+    <meta name="twitter:card" content="summary" />
+
+    <meta name="theme-color" content="#0ea5e9" />
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header" role="banner">
+      <div class="container header-inner">
+        <a href="#home" class="brand" aria-label="Home">
+          <span class="logo">AD</span>
+          <span class="brand-text">Alex Doe</span>
+        </a>
+        <nav class="nav" role="navigation" aria-label="Primary">
+          <button id="themeToggle" class="btn icon" aria-label="Toggle theme" title="Toggle theme">🌙</button>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="home" class="site-main">
+      <section class="hero section">
+        <div class="container">
+          <p class="eyebrow">Hello, I’m</p>
+          <h1>Alex Doe</h1>
+          <p class="subtitle">Software Engineer building reliable web apps and cloud-native services.</p>
+          <div class="actions">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn" href="#contact">Get in Touch</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container two-col">
+          <div>
+            <h2>About</h2>
+            <p>
+              I’m a software engineer focused on crafting resilient, accessible, and performant
+              web experiences. I enjoy working across the stack, with particular interest in
+              frontend architecture, API design, and developer experience.
+            </p>
+            <p>
+              I value simplicity, clear communication, and shipping features that make an impact.
+            </p>
+          </div>
+          <ul class="highlights">
+            <li>Clean, readable code and thoughtful testing</li>
+            <li>Strong fundamentals: data structures, design patterns, networking</li>
+            <li>Pragmatic approach to cloud and DevOps</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="skills" class="section alt">
+        <div class="container">
+          <h2>Skills</h2>
+          <ul class="skill-grid">
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Python</li>
+            <li>AWS</li>
+            <li>Docker</li>
+            <li>PostgreSQL</li>
+            <li>CI/CD</li>
+            <li>Testing</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <h2>Projects</h2>
+          <div class="projects-grid">
+            <article class="card">
+              <h3>Serverless Image Processor</h3>
+              <p>On-demand image resizing and optimization pipeline with AWS Lambda and S3.</p>
+              <ul class="tags"><li>AWS</li><li>Lambda</li><li>S3</li><li>CDK</li></ul>
+              <div class="links">
+                <a href="https://github.com/yourusername/serverless-image-processor" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
+            </article>
+            <article class="card">
+              <h3>Personal Finance Dashboard</h3>
+              <p>Interactive dashboard visualizing spending trends with secure account imports.</p>
+              <ul class="tags"><li>TypeScript</li><li>React</li><li>Node</li><li>PostgreSQL</li></ul>
+              <div class="links">
+                <a href="https://github.com/yourusername/finance-dashboard" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
+            </article>
+            <article class="card">
+              <h3>Realtime Chat</h3>
+              <p>Low-latency chat app with presence and typing indicators.</p>
+              <ul class="tags"><li>WebSocket</li><li>Redis</li><li>Express</li></ul>
+              <div class="links">
+                <a href="https://github.com/yourusername/realtime-chat" target="_blank" rel="noreferrer">GitHub</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section alt">
+        <div class="container">
+          <h2>Experience</h2>
+          <ol class="timeline">
+            <li>
+              <div class="timeline-point"></div>
+              <div class="timeline-content">
+                <h3>Senior Software Engineer — Acme Corp</h3>
+                <span class="muted">2022 — Present</span>
+                <p>Led cross-functional team to deliver a multi-tenant analytics platform.</p>
+              </div>
+            </li>
+            <li>
+              <div class="timeline-point"></div>
+              <div class="timeline-content">
+                <h3>Software Engineer — Startup XYZ</h3>
+                <span class="muted">2019 — 2022</span>
+                <p>Built core web application features and improved performance by 40%.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container contact">
+          <h2>Contact</h2>
+          <p>
+            I’m open to new opportunities and collaborations. The best way to reach me is
+            by email.
+          </p>
+          <div class="actions">
+            <a class="btn primary" href="mailto:you@example.com">Email Me</a>
+            <a class="btn" href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noreferrer">LinkedIn</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Alex Doe. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="./script.js" defer></script>
+  </body>
+</html>

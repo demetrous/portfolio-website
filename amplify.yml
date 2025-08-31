@@ -1,0 +1,21 @@
+version: 1
+applications:
+  - appRoot: /
+    frontend:
+      phases:
+        preBuild:
+          commands:
+            - echo "No preBuild needed"
+        build:
+          commands:
+            - echo "No build needed for static site"
+      artifacts:
+        baseDirectory: /
+        files:
+          - '**/*'
+      cache:
+        paths: []
+    routes:
+      - source: "/<*>"
+        target: "/index.html"
+        status: 200
